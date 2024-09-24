@@ -1,0 +1,24 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin-bottom: 50px;
+    background-color: black;
+}
+
+.Card.Header {
+    border-bottom: 0;
+}
+
+.main {
+    flex: 1;
+}
+
+@media screen and (max-width:576px) {
+    .login {
+        max-width: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+.customCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 6px;
+    z-index: 2;
+}
+
+.custom-img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.comments {
+    max-width: 100%;
+    align-items: center;
+}
+
+.hov {
+    position: relative;
+    text-decoration: none;
+}
+
+.hov::before {
+    content: '';
+    position: absolute;
+    width: 14%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #18272F;
+    left: 0;
+    bottom: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.hov:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.floatingTextarea2 {
+    margin-bottom: 15px;
+    width: 50%;
+}
